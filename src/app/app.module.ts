@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
+import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
 import { FechaactualComponent } from './fechaactual/fechaactual.component';
 import { CopyrightComponent } from './copyright/copyright.component';
@@ -18,13 +20,15 @@ import { ArrayobjetosComponent } from './arrayobjetos/arrayobjetos.component';
 import { EjdirectivangswitchComponent } from './ejdirectivangswitch/ejdirectivangswitch.component';
 import { MenuitemDirective } from './menuitem.directive';
 import { EjmidirectivaComponent } from './ejmidirectiva/ejmidirectiva.component';
-import { PadreComponent } from './padre/padre.component';
-import { HijoComponent } from './hijo/hijo.component';
+
+
+import { ComunicacionComponentesModule } from './comunicacion-componentes/comunicacion-componentes.module';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    FechaactualComponent,
+    /*FechaactualComponent,
     CopyrightComponent,
     ViewmodeloComponent,
     EjmetodoComponent,
@@ -38,13 +42,14 @@ import { HijoComponent } from './hijo/hijo.component';
     ArrayobjetosComponent,
     EjdirectivangswitchComponent,
     MenuitemDirective,
-    EjmidirectivaComponent,
-    PadreComponent,
-    HijoComponent
+    EjmidirectivaComponent,*/
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule,
+    
+    ComunicacionComponentesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
