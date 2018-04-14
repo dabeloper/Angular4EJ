@@ -21,9 +21,10 @@ import { EjdirectivangswitchComponent } from './ejdirectivangswitch/ejdirectivan
 import { MenuitemDirective } from './menuitem.directive';
 import { EjmidirectivaComponent } from './ejmidirectiva/ejmidirectiva.component';
 
-
 import { ComunicacionComponentesModule } from './comunicacion-componentes/comunicacion-componentes.module';
+import { ServicioComunicacionModule } from './servicio-comunicacion/servicio-comunicacion.module';
 
+import { LazyModule } from './lazy.module';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,9 @@ import { ComunicacionComponentesModule } from './comunicacion-componentes/comuni
     FormsModule,
     AppRoutingModule,
     
-    ComunicacionComponentesModule
+    ComunicacionComponentesModule,
+    ServicioComunicacionModule,
+    LazyModule
   ],
   providers: [],
   bootstrap: [AppComponent]

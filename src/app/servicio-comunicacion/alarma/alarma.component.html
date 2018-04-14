@@ -1,0 +1,8 @@
+<p>
+  alarma works!
+
+  {{ init }}
+  {{ timer.countdown$ | async }}
+  <button (click)="timer.parar()">DETENER</button>
+  <button (click)="timer.reiniciarContador(init)">REINICIAR</button>
+</p>
